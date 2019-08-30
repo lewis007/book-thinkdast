@@ -1,4 +1,4 @@
-[返回资源说明](/README.md)
+[返回资源库](https://github.com/lewis007/book-thinkdast)
 
 # 读书笔记
 

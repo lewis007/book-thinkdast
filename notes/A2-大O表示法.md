@@ -1,4 +1,6 @@
-[返回资源说明](/README.md) [返回读书笔记](README.md)
+[返回资源库](https://github.com/lewis007/book-thinkdast)
+
+[返回读书笔记](https://github.com/lewis007/book-thinkdast/tree/master/notes)
 
 # 大 O 表示法
 
