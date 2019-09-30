@@ -7,6 +7,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 因为维基百科打不开，现有的资源无法看到执行成功的结果，但是已经足以验证程序的逻辑正确性了。
+ *
+ * @author downey
+ */
 public class WikiPhilosophy {
 
     final static List<String> visited = new ArrayList<String>();
@@ -55,7 +60,8 @@ public class WikiPhilosophy {
             }
 
             System.out.println("**" + elt.text() + "**");
-            url = elt.attr("abs:href");
+            //url = elt.attr("abs:href");
+            url = "https://en.wikipedia.org" + elt.attr("href");
 
             if (url.equals(destination)) {
                 System.out.println("Eureka!");

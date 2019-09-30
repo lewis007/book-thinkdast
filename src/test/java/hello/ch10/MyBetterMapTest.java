@@ -1,6 +1,3 @@
-/**
- *
- */
 package hello.ch10;
 
 import hello.ch09.MyLinearMapTest;
@@ -8,7 +5,6 @@ import org.junit.Before;
 
 /**
  * @author downey
- *
  */
 public class MyBetterMapTest extends MyLinearMapTest {
 

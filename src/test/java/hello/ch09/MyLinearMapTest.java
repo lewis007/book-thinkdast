@@ -1,6 +1,3 @@
-/**
- *
- */
 package hello.ch09;
 
 import org.junit.Before;
@@ -17,7 +14,6 @@ import static org.junit.Assert.assertThat;
 
 /**
  * @author downey
- *
  */
 public class MyLinearMapTest {
 

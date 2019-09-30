@@ -1,6 +1,3 @@
-/**
- *
- */
 package hello.ch08;
 
 import hello.ch07.WikiFetcher;
@@ -13,7 +10,6 @@ import static org.junit.Assert.assertThat;
 
 /**
  * @author downey
- *
  */
 public class TermCounterTest {
 

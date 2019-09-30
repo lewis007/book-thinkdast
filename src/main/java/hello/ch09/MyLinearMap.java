@@ -1,6 +1,3 @@
-/**
- *
- */
 package hello.ch09;
 
 import java.util.*;
@@ -9,10 +6,9 @@ import java.util.*;
  * Implementation of a Map using a List of entries, so most
  * operations are linear time.
  *
- * @author downey
  * @param <K>
  * @param <V>
- *
+ * @author downey
  */
 public class MyLinearMap<K, V> implements Map<K, V> {
 
@@ -183,7 +179,7 @@ public class MyLinearMap<K, V> implements Map<K, V> {
 
     /**
      * Returns a reference to `entries`.
-     *
+     * <p>
      * This is not part of the Map interface; it is here to provide the functionality
      * of `entrySet` in a way that is substantially simpler than the "right" way.
      *

@@ -1,13 +1,16 @@
-package hello.ch10;
+package hello.ch11;
 
 import hello.ch04.Profiler;
 import hello.ch04.Profiler.Timeable;
-import hello.ch11.MyFixedHashMap;
+import hello.ch10.MyHashMap;
 import org.jfree.data.xy.XYSeries;
 
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author downey
+ */
 public class ProfileMapPut {
 
     /**

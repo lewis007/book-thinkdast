@@ -11,6 +11,9 @@ import java.util.Set;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * @author downey
+ */
 public class IndexTest {
 
     private Index index;

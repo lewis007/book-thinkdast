@@ -1,16 +1,17 @@
 package hello.ch07;
 
-import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
+/**
+ * @author downey
+ */
 public class WikiFetcher {
 
     private long lastRequestTime = -1;
@@ -27,8 +28,16 @@ public class WikiFetcher {
         sleepIfNeeded();
 
         // download and parse the document
-        Connection conn = Jsoup.connect(url);
-        Document doc = conn.get();
+        //Connection conn = Jsoup.connect(url);
+        //Document doc = conn.get();
+
+        // read the file
+        URL realURL = new URL(url);
+
+        String filename = realURL.getHost() + realURL.getPath();
+
+        InputStream stream = WikiFetcher.class.getClassLoader().getResourceAsStream(filename);
+        Document doc = Jsoup.parse(stream, "UTF-8", filename);
 
         // select the content text and pull out the paragraphs.
         Element content = doc.getElementById("mw-content-text");
@@ -39,7 +48,7 @@ public class WikiFetcher {
     }
 
     /**
-     * Reads the contents of a Wikipedia page from src/resources.
+     * Reads the contents of a Wikipedia page from src/main/resources.
      *
      * @param url
      * @return
@@ -49,8 +58,9 @@ public class WikiFetcher {
         URL realURL = new URL(url);
 
         // assemble the file name
-        String slash = File.separator;
-        String filename = "resources" + slash + realURL.getHost() + realURL.getPath();
+        //String slash = File.separator;
+        //String filename = "resources" + slash + realURL.getHost() + realURL.getPath();
+        String filename = realURL.getHost() + realURL.getPath();
 
         // read the file
         InputStream stream = WikiFetcher.class.getClassLoader().getResourceAsStream(filename);

@@ -3,7 +3,6 @@ package hello.ch03;
 import hello.ch02.MyArrayListTest;
 import org.junit.Before;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**
@@ -18,7 +17,7 @@ public class MyLinkedListTest extends MyArrayListTest {
         list.add(2);
         list.add(3);
 
-        mylist = new MyLinkedList<Integer>();
+        mylist = new MyLinkedList<>();
         mylist.addAll(list);
     }
 

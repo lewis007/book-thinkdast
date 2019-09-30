@@ -11,7 +11,7 @@ public class ListClientExample {
     private List<Integer> list;
 
     public ListClientExample() {
-        list = new ArrayList<>();
+        list = new ArrayList<Integer>();
     }
 
     public List<Integer> getList() {

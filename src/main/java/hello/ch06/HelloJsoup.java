@@ -1,4 +1,4 @@
-package hello.unk;
+package hello.ch06;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -13,11 +13,12 @@ import java.io.IOException;
  * <p>
  * From: http://jsoup.org/cookbook/extracting-data/example-list-links
  */
-public class ListLinks {
+public class HelloJsoup {
 
     public static void main(String[] args) throws IOException {
+
         String dirname = System.getProperty("user.dir");
-        String filename = "src/resources/en.wikipedia.org/wiki/Computer_science";
+        String filename = "src/main/resources/en.wikipedia.org/wiki/Computer_science";
         String baseURI = dirname + "/" + filename;
 
         File input = new File(baseURI);
@@ -37,30 +38,30 @@ public class ListLinks {
             break;
         }
 
-//		Elements media = doc.select("[src]");
-//		Elements imports = doc.select("link[href]");
+//        Elements media = doc.select("[src]");
+//        Elements imports = doc.select("link[href]");
 //
-//		print("\nMedia: (%d)", media.size());
-//		for (Element src : media) {
-//			if (src.tagName().equals("img")) {
-//				print(" * %s: <%s> %sx%s (%s)",
-//						src.tagName(), src.attr("abs:src"), src.attr("width"), src.attr("height"),
-//						trim(src.attr("alt"), 20));
-//			} else {	
-//				print(" * %s: <%s>", src.tagName(), src.attr("abs:src"));
-//			}
-//		}
+//        print("\nMedia: (%d)", media.size());
+//        for (Element src : media) {
+//            if (src.tagName().equals("img")) {
+//                print(" * %s: <%s> %sx%s (%s)",
+//                        src.tagName(), src.attr("abs:src"), src.attr("width"), src.attr("height"),
+//                        trim(src.attr("alt"), 20));
+//            } else {
+//                print(" * %s: <%s>", src.tagName(), src.attr("abs:src"));
+//            }
+//        }
 //
-//		print("\nImports: (%d)", imports.size());
-//		for (Element link : imports) {
-//			print(" * %s <%s> (%s)", link.tagName(),link.attr("abs:href"), link.attr("rel"));
-//		}
+//        print("\nImports: (%d)", imports.size());
+//        for (Element link : imports) {
+//            print(" * %s <%s> (%s)", link.tagName(), link.attr("abs:href"), link.attr("rel"));
+//        }
 //
-//		print("\nLinks: (%d)", links.size());
-//		for (Element link : links) {
-//			print(" * a: <%s>  (%s)", link.attr("abs:href"), trim(link.text(), 35));
-//			break;
-//		}
+//        print("\nLinks: (%d)", links.size());
+//        for (Element link : links) {
+//            print(" * a: <%s>  (%s)", link.attr("abs:href"), trim(link.text(), 35));
+//            break;
+//        }
     }
 
     private static void print(String msg, Object... args) {

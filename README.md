@@ -15,7 +15,7 @@
 * 第1章 接口
 * 第2章 算法分析
 * 第3章 ArrayList 类
-* 第4章 LinkdedList 类
+* 第4章 LinkedList 类
 * 第5章 双向链表
 * 第6章 树的遍历
 * 第7章 到达哲学
@@ -34,15 +34,11 @@
 
 ## 在线资料
 
-通过书籍主页，可以 在线阅读、下载 PDF 书籍英文版，访问书籍源码 GitHub 资源库。
+通过书籍主页，可以 在线阅读、下载 PDF 书籍英文版，并可以访问书籍源码 GitHub 资源库。
 
 * 书籍主页：https://greenteapress.com/wp/think-data-structures
 * 源码地址：https://github.com/AllenDowney/ThinkDataStructures
 
 ## 本资源库
 
-按章节目录整理原源码 solutions 目录，并以 Maven 进行项目管理，源码中签名为原作者。
-
-# 读书笔记
-
-我的 [读书笔记](notes) 。
+按章节目录整理原源码 solutions 目录，通过 Maven 进行项目管理，源码中签名依旧为原作者。

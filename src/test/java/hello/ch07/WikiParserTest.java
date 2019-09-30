@@ -1,6 +1,3 @@
-/**
- *
- */
 package hello.ch07;
 
 import org.jsoup.nodes.Element;
@@ -14,7 +11,6 @@ import static org.junit.Assert.assertThat;
 
 /**
  * @author downey
- *
  */
 public class WikiParserTest {
 
@@ -22,6 +18,7 @@ public class WikiParserTest {
 
     /**
      * Test method for {@link WikiParser#findFirstLink()}.
+     *
      * @throws IOException
      */
     @Test
@@ -33,6 +30,7 @@ public class WikiParserTest {
 
     /**
      * Test method for {@link WikiParser#findFirstLink()}.
+     *
      * @throws IOException
      */
     @Test
